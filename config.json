@@ -1,6 +1,8 @@
     {
         "projectName": "Sample project",
         "inputFile": "sample.csv",
+        "delimitator": ",",
+        "skipEmptyRows": true,
         "customCSS": "custom.css",
 
         "eventTypeMapping": { 
