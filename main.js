@@ -1,6 +1,8 @@
+configFile = (typeof configFile == 'undefined' ? 'config.json' : configFile);    // fallback to config.json if a custom configFile is not declared
+
 const loadConfig = async() => {
-    const response = await fetch('config.json');
-    response.ok ? console.info("Configuration loaded") : console.error("Error loading config.json:", response.status, response.statusText);
+    const response = await fetch(configFile);
+    response.ok ? console.info(`Configuration loaded (${configFile})`) : console.error("Error loading config.json:", response.status, response.statusText);
     config = await response.json();
 }
 
