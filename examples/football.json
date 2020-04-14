@@ -1,7 +1,7 @@
     {
         "projectName": "Last 4 matches",
         "inputFile": "examples/football.csv",
-        "delimitator": ",",
+        "separator": ",",
         "customCSS": "examples/football.css",
 
         "eventTypeMapping": { 

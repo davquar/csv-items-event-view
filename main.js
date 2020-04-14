@@ -29,7 +29,7 @@ function computeData() {
     
     const lines = csv.split('\n');
     lines.forEach(line => {
-        const cells = line.split(config.delimitator);
+        const cells = line.split(config.separator);
         const item = cells[0];
         const events = [];
         for (i=1; i<cells.length; i++) {

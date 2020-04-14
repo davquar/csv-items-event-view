@@ -1,7 +1,7 @@
     {
         "projectName": "Sample tracking",
         "inputFile": "examples/sample.csv",
-        "delimitator": ",",
+        "separator": ",",
         "skipEmptyRows": true,
         "customCSS": "examples/sample.css",
 

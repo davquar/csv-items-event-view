@@ -18,13 +18,13 @@ Item_n,gg/mm/aa|event_type,...,gg/mm/aa|event_type
 Just start a webserver in the directory where you cloned this repo, and go there with a browser.
 
 ### Configuration
-The script looks for a `config.json` file, that contains info such as the CSV input file, the delimitator, etc; for example:
+The script looks for a `config.json` file, that contains info such as the CSV input file, the separator, etc; for example:
 
 ```json
 {
   "projectName": "Sample tracking",
   "inputFile": "examples/sample.csv",
-  "delimitator": ",",
+  "separator": ",",
   "skipEmptyRows": true,
   "customCSS": "examples/sample.css",
 
