@@ -1,0 +1,6 @@
+
+    {
+        "projectName": "Sample project",
+        "inputFile": "sample.csv",
+        "customCss": "custom/sample.css"
+    }
