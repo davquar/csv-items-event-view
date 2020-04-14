@@ -1,15 +1,18 @@
 const loadConfig = async() => {
     const response = await fetch('config.json');
+    response.ok ? console.info("Configuration loaded") : console.error("Error loading config.json:", response.status, response.statusText);
     config = await response.json();
 }
 
 const loadCSV = async() => {
     const response = await fetch(config.inputFile);
+    response.ok ? console.info("CSV file loaded") : console.error(`Error loading ${config.inputFile}:`, response.status, response.statusText);
     csv = await response.text();
 }
 
 const loadCustomCSS = async() => {
     const response = await fetch(config.customCSS);
+    response.ok ? console.info("Custom CSS loaded") : console.error(`Error loading ${config.customCSS}:`, response.status, response.statusText);
     customCSS = await response.text();
 }
 
