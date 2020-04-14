@@ -25,6 +25,7 @@ let rowsNumber = 0;
 function computeData() {
     data = document.querySelector('#data');
     document.querySelector('header h1').innerHTML = config.projectName;
+    document.title = config.projectName;
     
     const lines = csv.split('\n');
     lines.forEach(line => {
