@@ -14,7 +14,6 @@ let rowsNumber = 0;
 
 function computeData() {
     data = document.querySelector('#data');
-    
     document.querySelector('header h1').innerHTML = config.projectName;
     
     const lines = csv.split('\n');
@@ -39,7 +38,7 @@ function createRow(item, events) {
     events.forEach(event => {
         eventsDiv.innerHTML += 
             `<div class="event type-${event.type}">
-                <div class="type">${event.type}</div>
+                <div class="type">${config.eventTypeMapping[event.type]}</div>
                 <div class="date">${event.date}</div>
             </div>`
     });
