@@ -1,9 +1,9 @@
     {
-        "projectName": "Sample project",
-        "inputFile": "sample.csv",
+        "projectName": "Sample tracking",
+        "inputFile": "examples/sample.csv",
         "delimitator": ",",
         "skipEmptyRows": true,
-        "customCSS": "custom.css",
+        "customCSS": "examples/sample.css",
 
         "eventTypeMapping": { 
             "a": "Type A",

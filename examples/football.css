@@ -1,0 +1,15 @@
+.row .name {
+    width: 70px;
+}
+
+.type-w {
+    background: rgba(27, 250, 75, .5);
+}
+
+.type-d {
+    background: rgba(207, 207, 207, .5);
+}
+
+.type-l {
+    background: rgba(237, 28, 28, .5);
+}

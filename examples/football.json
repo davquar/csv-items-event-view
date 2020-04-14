@@ -1,0 +1,12 @@
+    {
+        "projectName": "Last 4 matches",
+        "inputFile": "examples/football.csv",
+        "delimitator": ",",
+        "customCSS": "examples/football.css",
+
+        "eventTypeMapping": { 
+            "w": "Won",
+            "d": "Drawn",
+            "l": "Lost"
+        }
+    }
