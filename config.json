@@ -1,7 +1,7 @@
     {
         "projectName": "Sample project",
         "inputFile": "sample.csv",
-        "customCss": "custom/sample.css",
+        "customCSS": "custom.css",
 
         "eventTypeMapping": { 
             "a": "Type A",

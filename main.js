@@ -8,7 +8,12 @@ const loadCSV = async() => {
     csv = await response.text();
 }
 
-loadConfig().then(loadCSV).then(computeData);
+const loadCustomCSS = async() => {
+    const response = await fetch(config.customCSS);
+    customCSS = await response.text();
+}
+
+loadConfig().then(loadCSV).then(loadCustomCSS).then(computeData);
 
 let rowsNumber = 0;
 
@@ -29,6 +34,8 @@ function computeData() {
         }
         createRow(item, events);
     })
+
+    document.querySelector('body').innerHTML += `<!-- Custom CSS --> <style>${customCSS}</style>`;
 }
 
 function createRow(item, events) {
